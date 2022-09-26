@@ -1,7 +1,13 @@
 /* Start Global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 :root {
   --main-color: #2196f3;
   --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
 }
 html {
   scroll-behavior: smooth;
@@ -9,18 +15,20 @@ html {
 body {
   font-family: "Comfortaa", cursive;
 }
+a {
+  text-decoration: none;
+}
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-container {
+.container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin: auto;
 }
 /* Small */
 @media (min-width: 768px) {
@@ -41,3 +49,43 @@ container {
   }
 }
 /* End Global rules */
+/* Start Header */
+.header {
+  background-color: #fff;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px #ddd;
+  -moz-box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px #ddd;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.header .brand {
+  color: var(--main-color);
+  font-size: 26px;
+  font-weight: bold;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .main-nav {
+  display: flex;
+}
+.header .main-nav > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 72px;
+  padding: 0 30px;
+  color: #000;
+  transition: var(--main-transition);
+}
+/* End Header */
