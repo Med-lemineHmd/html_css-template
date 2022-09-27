@@ -126,8 +126,43 @@ ul {
 .header .main-nav > li > a:hover::before {
   left: 0;
 }
+.header .megamenu {
+  gap: 40px;
+  display: flex;
+  z-index: 10;
+  border-bottom: 3px solid var(--main-color);
+  padding: 30px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  top: calc(100% + 50px);
+  transition: top var(--main-transition), opacity var(--main-transition);
+}
+.header .megamenu .image img {
+  max-width: 100%;
+}
+.header .megamenu .links {
+}
+.header .megamenu .links li {
+}
+.header .megamenu .links li::before {
+  content: "";
+}
+.header .megamenu .links li:hover::before {
+}
+.header .megamenu .links li a {
+  color: var(--main-color);
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.header .megamenu .links li a i {
+  margin-right: 10px;
+}
 /* End Header */
-/* Start Landing */
+/* Start Landing ...................................................................*/
 .landing {
   position: relative;
 }
