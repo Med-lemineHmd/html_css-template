@@ -450,7 +450,7 @@ ul {
 .features .box .image-holder::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -549,6 +549,52 @@ ul {
   color: #fff;
 }
 /* End Features */
+/* Start testimonials ........................................................*/
+.testimonials {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: var(--section-background);
+  position: relative;
+}
+.testimonials .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.testimonials .box {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
+  border-radius: 6px;
+  position: relative;
+}
+.testimonials .box img {
+  position: absolute;
+  right: -10px;
+  top: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid var(--section-background);
+}
+.testimonials .box h3 {
+  margin: 0 0 10px;
+}
+.testimonials .box .title {
+  color: var(--main-color);
+  margin-bottom: 10px;
+  display: block;
+}
+.testimonials .box .rate .filled {
+  color: #ffc107;
+}
+.testimonials .box p {
+  line-height: 1.5;
+  color: #777;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+/* End testimonials */
 /* Start Animation ...........................................................*/
 @keyframes up-and-down {
   0%,
