@@ -594,6 +594,35 @@ ul {
   margin-top: 10px;
   margin-bottom: 0;
 }
+/* Start team ................................................................*/
+.team {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+}
+.team .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.team .box {
+  position: relative;
+}
+.team .box::before {
+  content: "";
+  background-color: #f3f3f3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  z-index: -2;
+}
+.team .box .data img {
+  width: 100%;
+}
+/* end team */
 /* End testimonials */
 /* Start Animation ...........................................................*/
 @keyframes up-and-down {
