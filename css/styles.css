@@ -458,14 +458,50 @@ ul {
 .features .box .image-holder::after {
   content: "";
   position: absolute;
-  bottom: 140px;
+  bottom: 286px;
   right: 0;
   border-style: solid;
-  border-width: 0px 0px 150px 600px;
+  border-width: 0px 0px 170px 500px;
   border-color: transparent transparent #fff transparent;
+  transition: var(--main-transition);
 }
 .features .box .image-holder img {
   max-width: 100%;
+}
+.features .box:hover .image-holder::after {
+  border-width: 170px 400px 190px 0px;
+  bottom: 286px;
+}
+.features .box h2 {
+  position: relative;
+  font-size: 40px;
+  margin: auto;
+  width: fit-content;
+}
+.features .box h2::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 15px;
+  height: 5px;
+  width: calc(100% - 30px);
+  background-color: #a29c48;
+}
+.features .box p {
+  line-height: 2;
+  font-size: 20px;
+  margin: 30px 0;
+  padding: 25px;
+  color: #777;
+}
+.features .box a {
+  display: block;
+  border: 3px solid red;
+  width: fit-content;
+  margin: auto;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px 20px;
 }
 /* End Features */
 /* Start Animation ...........................................................*/
