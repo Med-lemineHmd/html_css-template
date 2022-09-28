@@ -458,10 +458,10 @@ ul {
 .features .box .image-holder::after {
   content: "";
   position: absolute;
-  bottom: 286px;
+  bottom: 0;
   right: 0;
   border-style: solid;
-  border-width: 0px 0px 170px 500px;
+  border-width: 0px 0px 100px 500px;
   border-color: transparent transparent #fff transparent;
   transition: var(--main-transition);
 }
@@ -469,8 +469,8 @@ ul {
   max-width: 100%;
 }
 .features .box:hover .image-holder::after {
-  border-width: 170px 400px 190px 0px;
-  bottom: 286px;
+  border-width: 140px 500px 140px 0px;
+  bottom: 0;
 }
 .features .box h2 {
   position: relative;
@@ -496,12 +496,57 @@ ul {
 }
 .features .box a {
   display: block;
-  border: 3px solid red;
+  border: 3px solid transparent;
   width: fit-content;
-  margin: auto;
+  margin: 0 auto 30px;
   font-weight: bold;
   font-size: 22px;
   padding: 10px 20px;
+  border-radius: 6px;
+  transition: var(--main-transition);
+}
+.features .quality .image-holder::before {
+  background-color: rgb(244 64 54 / 60%);
+}
+.features .quality h2::after {
+  background-color: #f44036;
+}
+.features .quality a {
+  color: #f44036;
+  border-color: #f44036;
+  background: linear-gradient(to right, #f44036 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+.features .time .image-holder::before {
+  background-color: rgb(0 150 136 / 60%);
+}
+.features .time h2::after {
+  background-color: #009688;
+}
+.features .time a {
+  color: #009688;
+  border-color: #009688;
+  background: linear-gradient(to right, #009688 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+.features .passion .image-holder::before {
+  background-color: rgb(3 169 244 / 60%);
+}
+.features .passion h2::after {
+  background-color: #03a9f4;
+}
+.features .passion a {
+  color: #03a9f4;
+  border-color: #03a9f4;
+  background: linear-gradient(to right, #03a9f4 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+.features .box:hover a {
+  background-position: left bottom;
+  color: #fff;
 }
 /* End Features */
 /* Start Animation ...........................................................*/
