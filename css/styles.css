@@ -895,6 +895,61 @@ ul {
   margin: 10px 0 0;
 }
 /* End work-steps */
+/* Start events ..............................................................*/
+.events {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+}
+.events .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.events img {
+  max-width: 450px;
+}
+@media (max-width: 991px) {
+  .events img {
+    display: none;
+  }
+}
+.events .info {
+  flex: 1;
+}
+.events .info .time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 10px;
+}
+.events .info .time .unit {
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  width: 75px;
+  text-align: center;
+  transition: var(--main-transition);
+}
+.events .info .time .unit span {
+  display: block;
+}
+.events .info .time .unit span:first-child {
+  font-size: 30px;
+  padding: 15px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+.events .info .time .unit span:last-child {
+  padding: 8px 10px;
+  font-size: 13px;
+  border-top: 1px solid #d4d4d4;
+}
+.events .subscribe {
+  width: 100%;
+  margin-top: 50px;
+}
+/* End events */
 /* Start Animation ...........................................................*/
 @keyframes up-and-down {
   0%,
