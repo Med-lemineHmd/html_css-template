@@ -1398,6 +1398,39 @@ ul {
   padding: 0 20px;
 }
 /* End Discount */
+/* Start Footer ..............................................................*/
+.footer {
+  background-color: #071c33;
+  padding: 70px 0 0;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+}
+.footer .box h3 {
+  font-size: 40px;
+  color: #fff;
+  margin: 0 0 20px;
+}
+.footer .box .social {
+  display: flex;
+}
+.footer .box .social li {
+  margin-right: 10px;
+}
+.footer .box .social li a {
+  background-color: #313131;
+  color: #998989;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  transition: var(--main-transition);
+}
+/* End Footer */
 /* Start Animation ...........................................................*/
 @keyframes up-and-down {
   0%,
