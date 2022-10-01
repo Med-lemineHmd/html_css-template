@@ -1267,6 +1267,11 @@ ul {
   margin: 0 auto 50px;
   position: relative;
 }
+@media (max-width: 767px) {
+  .stats h2 {
+    text-align: center;
+  }
+}
 .stats .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
